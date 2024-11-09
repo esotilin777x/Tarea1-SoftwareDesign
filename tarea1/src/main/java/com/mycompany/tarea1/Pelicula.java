@@ -8,15 +8,14 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
-// VIPSeat.java (Implementación de TipoAsiento)
-public class VIPSeat implements TipoAsiento {
-    @Override
-    public double getPrecio() {
-        return 20.0; // Precio VIP
-    }
+// Pelicula.java
+public class Pelicula {
+    private String titulo;
+    private String genero;
 
-    @Override
-    public String getDescripcion() {
-        return "Asiento VIP";
+    public Pelicula(String titulo, String genero) {
+        this.titulo = titulo;
+        this.genero = genero;
     }
 }
+    

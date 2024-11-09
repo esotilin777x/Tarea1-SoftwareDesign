@@ -9,5 +9,6 @@ package com.mycompany.tarea1;
  * @author erick
  */
 public interface TipoAsiento {
-    
+    double getPrecio();
+    String getDescripcion();
 }

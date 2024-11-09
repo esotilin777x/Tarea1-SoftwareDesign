@@ -8,6 +8,14 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
-public class AgenteSoporte {
-    
+// AgenteSoporte.java
+public class AgenteSoporte extends Usuario {
+
+    public AgenteSoporte(String nombre, String email, String contraseña) {
+        super(nombre, email, contraseña);
+    }
+
+    public void atenderReclamo(Problema problema) {
+        problema.actualizarEstado(EstadoProblema.EN_PROCESO);
+    }
 }

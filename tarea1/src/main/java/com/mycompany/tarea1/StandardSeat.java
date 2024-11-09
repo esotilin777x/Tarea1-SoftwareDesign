@@ -8,6 +8,15 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
-public class StandardSeat {
-    
+// StandardSeat.java (Implementación de TipoAsiento)
+public class StandardSeat implements TipoAsiento {
+    @Override
+    public double getPrecio() {
+        return 10.0; // Precio estándar
+    }
+
+    @Override
+    public String getDescripcion() {
+        return "Asiento estándar";
+    }
 }

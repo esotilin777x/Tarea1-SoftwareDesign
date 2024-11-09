@@ -8,6 +8,27 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
+// Asiento.java (Clase que representa el asiento)
 public class Asiento {
-    
+    private int numero;
+    private TipoAsiento tipoAsiento;
+    private boolean estado; // true para ocupado, false para disponible
+
+    public Asiento(int numero, TipoAsiento tipoAsiento) {
+        this.numero = numero;
+        this.tipoAsiento = tipoAsiento;
+        this.estado = false;
+    }
+
+    public void reservar() {
+        this.estado = true;
+    }
+
+    public void liberar() {
+        this.estado = false;
+    }
+
+    public TipoAsiento getTipoAsiento() {
+        return tipoAsiento;
+    }
 }

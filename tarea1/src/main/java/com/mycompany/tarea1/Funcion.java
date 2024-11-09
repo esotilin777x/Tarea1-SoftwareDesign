@@ -8,6 +8,17 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
+// Funcion.java
+import java.util.Date;
+
 public class Funcion {
-    
+    private Date horario;
+    private Sala sala;
+    private Pelicula pelicula;
+
+    public Funcion(Date horario, Sala sala, Pelicula pelicula) {
+        this.horario = horario;
+        this.sala = sala;
+        this.pelicula = pelicula;
+    }
 }

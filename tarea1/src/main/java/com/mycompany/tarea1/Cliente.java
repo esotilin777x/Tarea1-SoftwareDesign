@@ -8,6 +8,22 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
-public class Cliente {
-    
+// Cliente.java (Extiende Usuario)
+import java.util.List;
+
+public class Cliente extends Usuario {
+    private List<Boleto> boletos;
+
+    public Cliente(String nombre, String email, String contraseña, List<Boleto> boletos) {
+        super(nombre, email, contraseña);
+        this.boletos = boletos;
+    }
+
+    public void reservarAsiento() {
+        // Implementación de reserva
+    }
+
+    public void reportarProblema(Problema problema) {
+        // Implementación de reporte de problema
+    }
 }

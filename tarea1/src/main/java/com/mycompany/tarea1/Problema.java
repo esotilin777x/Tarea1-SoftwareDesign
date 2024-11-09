@@ -8,6 +8,17 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
+// Problema.java
 public class Problema {
-    
+    private String descripcion;
+    private EstadoProblema estado;
+
+    public Problema(String descripcion) {
+        this.descripcion = descripcion;
+        this.estado = EstadoProblema.PENDIENTE;
+    }
+
+    public void actualizarEstado(EstadoProblema nuevoEstado) {
+        this.estado = nuevoEstado;
+    }
 }

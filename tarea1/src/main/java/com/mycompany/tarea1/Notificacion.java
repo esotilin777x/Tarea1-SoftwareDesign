@@ -8,6 +8,12 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
-public class Notificacion {
-    
+// Notificacion.java
+public class Notificacion implements ServicioNotificacion {
+    @Override
+    public void enviarNotificacion(String mensaje, Cliente cliente) {
+        // Aquí iría la lógica para enviar la notificación
+        System.out.println("Enviando notificación a " + cliente.getNombre() + ": " + mensaje);
+    }
 }
+

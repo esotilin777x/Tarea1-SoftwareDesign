@@ -8,6 +8,19 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
+// Sala.java
+import java.util.List;
+
 public class Sala {
-    
+    private int numeroSala;
+    private List<Asiento> asientos;
+
+    public Sala(int numeroSala, List<Asiento> asientos) {
+        this.numeroSala = numeroSala;
+        this.asientos = asientos;
+    }
+
+    public List<Asiento> getAsientos() {
+        return asientos;
+    }
 }
