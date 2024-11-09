@@ -26,4 +26,8 @@ public class Cliente extends Usuario {
     public void reportarProblema(Problema problema) {
         // Implementación de reporte de problema
     }
+
+    String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

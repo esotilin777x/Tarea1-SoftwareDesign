@@ -8,6 +8,7 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
+// ServicioNotificacion.java
 public interface ServicioNotificacion {
-    
+    void enviarNotificacion(String mensaje, Cliente cliente);
 }

@@ -8,6 +8,10 @@ package com.mycompany.tarea1;
  *
  * @author erick
  */
+// EstadoProblema.java
 public enum EstadoProblema {
-    
+    PENDIENTE,
+    EN_PROCESO,
+    RESUELTO
 }
+
